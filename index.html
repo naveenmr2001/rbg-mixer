@@ -9,25 +9,26 @@
 </head>
 <body>
     <section class="main-container">
-        <header class="header">
-            RGBA MIXER
-        </header>
         <div class="color-mixer">
+            <header class="header">
+                RGBA MIXER
+            </header>
             <div class="box">
-                <input type="range" class="range" value ="0" min="0" max ="100" onmousemove= "rangeSlider(this.value)">
+                <input type="range" class="range" value ="0" min="0" max ="255" onmousemove= "rangeSlider(this.value)">
                 <span id="rangeValue">0</span>
             </div>
             <div class="box">
-                <input type="range" class="range-2" value ="0" min="0" max ="100" onmousemove= "rangeSlider2(this.value)">
+                <input type="range" class="range-2" value ="0" min="0" max ="255" onmousemove= "rangeSlider2(this.value)">
                 <span id="rangeValue-2">0</span>
             </div>
             <div class="box">
-                <input type="range" class="range-3" value ="0" min="0" max ="100" onmousemove= "rangeSlider3(this.value)">
+                <input type="range" class="range-3" value ="0" min="0" max ="255" onmousemove= "rangeSlider3(this.value)">
                 <span id="rangeValue-3">0</span>
             </div>
-            <div class="box">
-                <input type="range" class="range-4" value ="0" min="0" max ="100" onmousemove= "rangeSlider4(this.value)">
-                <span id="rangeValue-4">0</span>
+
+
+            <div class="rgba">
+                <span class="rgba-value">rbga(0,0,0,0.1)</span>
             </div>
         </div>
     </section>

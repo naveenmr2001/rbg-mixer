@@ -1,24 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700");
-
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap');
 *
 {
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-weight: bolder;
+}
+
+.main-container{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    flex-direction: column;
+    gap:9rem;
 }
 
 .header{
+    font-weight: bolder;
     background-color:#edf1f4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    font-size:2rem;
 }
 .color-mixer
 {
-  min-height:100vh;
+    border-radius: 5px;
+    position: absolute;
+    width:36rem;
+    height:26rem;
   display:flex;
   flex-direction: column;
   justify-content:center;
@@ -37,7 +49,6 @@
   border-radius:40px;
   box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
               -15px -15px 20px #fff;
-  
 }
 .range,.range-2,.range-3,.range-4
 {
@@ -130,4 +141,8 @@
           -5px -5px 10px #fff,
           inset 5px 5px 10px rgba(0,0,0,0.1),
           inset -5px -5px 5px rgba(255,255,255,0.25);
+}
+
+.rgba-value{
+    font-size:2rem;
 }
