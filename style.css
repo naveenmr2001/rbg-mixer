@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700");
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.header{
+    background-color:#edf1f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.color-mixer
+{
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  background-color: #edf1f4;
+  gap:1.5rem;
+}
+.box
+{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.05),#edf1f4);
+  border-radius:40px;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.1),
+              -15px -15px 20px #fff;
+  
+}
+.range,.range-2,.range-3,.range-4
+{
+  width:400px;
+  height:15px;
+  appearance:none;
+  background:#edf1f4;
+  outline:none;
+  border-radius:15px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+          -5px -5px 10px #fff,
+          inset 5px 5px 5px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+.range::-webkit-slider-thumb,
+.range::-moz-range-thumb
+{
+  appearance:none;
+  background:#fff;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  border:2px solid #0074cf;
+  box-shadow: -410px 0 0 400px #27a0ff;
+  cursor:pointer;
+}
+#rangeValue
+{
+  position:relative;
+  width:60px;
+  background:red;
+  color:#fff;
+  text-align:center;
+  font-size:1.25em;
+  font-weight:500;
+  margin-left:15px;
+  border-radius:25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+          -5px -5px 10px #fff,
+          inset 5px 5px 10px rgba(0,0,0,0.1),
+          inset -5px -5px 5px rgba(255,255,255,0.25);
+}
+
+#rangeValue-2
+{
+  position:relative;
+  width:60px;
+  background:green;
+  color:#fff;
+  text-align:center;
+  font-size:1.25em;
+  font-weight:500;
+  margin-left:15px;
+  border-radius:25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+          -5px -5px 10px #fff,
+          inset 5px 5px 10px rgba(0,0,0,0.1),
+          inset -5px -5px 5px rgba(255,255,255,0.25);
+}
+
+#rangeValue-3
+{
+  position:relative;
+  width:60px;
+  background:blue;
+  color:#fff;
+  text-align:center;
+  font-size:1.25em;
+  font-weight:500;
+  margin-left:15px;
+  border-radius:25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+          -5px -5px 10px #fff,
+          inset 5px 5px 10px rgba(0,0,0,0.1),
+          inset -5px -5px 5px rgba(255,255,255,0.25);
+}
+
+#rangeValue-4
+{
+  position:relative;
+  width:60px;
+  background:white;
+  color:black;
+  text-align:center;
+  font-size:1.25em;
+  font-weight:500;
+  margin-left:15px;
+  border-radius:25px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+          -5px -5px 10px #fff,
+          inset 5px 5px 10px rgba(0,0,0,0.1),
+          inset -5px -5px 5px rgba(255,255,255,0.25);
+}

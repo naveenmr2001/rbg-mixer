@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RGBA MIXER</title>
+</head>
+<body>
+    <section class="main-container">
+        <header class="header">
+            RGBA MIXER
+        </header>
+        <div class="color-mixer">
+            <div class="box">
+                <input type="range" class="range" value ="0" min="0" max ="100" onmousemove= "rangeSlider(this.value)">
+                <span id="rangeValue">0</span>
+            </div>
+            <div class="box">
+                <input type="range" class="range-2" value ="0" min="0" max ="100" onmousemove= "rangeSlider2(this.value)">
+                <span id="rangeValue-2">0</span>
+            </div>
+            <div class="box">
+                <input type="range" class="range-3" value ="0" min="0" max ="100" onmousemove= "rangeSlider3(this.value)">
+                <span id="rangeValue-3">0</span>
+            </div>
+            <div class="box">
+                <input type="range" class="range-4" value ="0" min="0" max ="100" onmousemove= "rangeSlider4(this.value)">
+                <span id="rangeValue-4">0</span>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
