@@ -13,11 +13,8 @@
     width:100%;
     min-height:100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin:auto;
-    flex-direction: column;
-    gap:9rem;
 }
 
 .header{
@@ -37,6 +34,13 @@
   align-items:center;
   background-color: #edf1f4;
   gap:1.5rem;
+}
+.color-mixer-2
+{
+    border-radius: 5px;
+    width:36rem;
+    height:26rem;
+
 }
 .box
 {
@@ -145,4 +149,8 @@
 
 .rgba-value{
     font-size:2rem;
+}
+
+.hex-value{
+  font-size:2rem;
 }

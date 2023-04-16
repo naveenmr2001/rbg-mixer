@@ -25,6 +25,8 @@ const blueSlider = document.querySelector('.range-3');
 const colorPreview = document.querySelector('.main-container');
 const rgba = document.querySelector('.rgba-value');
 const header = document.querySelector('.header');
+const hex = document.querySelector('.hex-value');
+
 console.log(redSlider)
 console.log(greenSlider)
 console.log(blueSlider)
@@ -34,6 +36,19 @@ window.addEventListener("load", (event) => {
     updateColor();
   });
 
+function rgbToHex(rgb) {
+  var rgbValues = rgb.substring(4, rgb.length - 1).replace(/ /g, '').split(',');
+  
+  var hex = '#';
+  for (var i = 0; i < rgbValues.length; i++) {
+    var hexValue = parseInt(rgbValues[i]).toString(16);
+    hex += hexValue.length === 1 ? "0" + hexValue : hexValue;
+  }
+  
+  return hex;
+}
+  
+
 function updateColor() {
   const redValue = redSlider.value;
   const greenValue = greenSlider.value;
@@ -42,9 +57,12 @@ function updateColor() {
   const color = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
   console.log(color)
   colorPreview.style.backgroundColor = color;
-  rgba.innerHTML = `rbg(${redValue}, ${greenValue}, ${blueValue})`;
+  rgba.innerHTML = "decimal: "+`rbg(${redValue}, ${greenValue}, ${blueValue})`;
+  hex.innerHTML = "hex: "+rgbToHex(`rbg(${redValue}, ${greenValue}, ${blueValue})`)
+  console.log(hex)
   rgba.style.color = color;
   header.style.color = color;
+  hex.style.color = color;
 }
 
 redSlider.addEventListener('input', updateColor);
